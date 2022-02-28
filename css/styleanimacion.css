@@ -1,0 +1,8 @@
+.imagenCarrusel:hover{
+    transform: scale(1.3);
+}
+
+.imagenCarrusel{
+    transition: transform o,5s
+}
+
