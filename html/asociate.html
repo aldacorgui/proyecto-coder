@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <title>Asociate</title>
 </head>
 <body>
+    
+    
     
     <header>
         <img src="../multimedia/Escudo-desde-2006.jpg" alt="Escudo del Taladro" height="100" width="100" class="encabezado__imagen">
@@ -24,50 +31,66 @@
     
     </header>
     
-    <h2>¡ASOCIATE! </h2>
+
     
-    <form action="" method="post" enctype="">
-        <div>
-            <input type="text" name="nombre y apellido" id="nyp" >
-            <label for="nyp">Nombre y Apellido: </label> 
-    
-            <br>
-    
-            <input type="date" name="fecha de nacimiento" id="fdn">
-            <label for="fdn">Fecha de Nacimiento:</label>
+    <section class="container mt-5 bg-success p-2" style="--bs-bg-opacity: .10; ">
+        <form action="" method="post" enctype="" class="mb-3">
             
-            <br>
+            <h2 class="text-center">¡ASOCIATE! </h2>
             
-            <input type="tel" name="Teléfono" id="tel">
-            <label for="tel">Teléfono:</label>
-    
-            <br>
-    
-            <input type="email" name="mail" id="mail">
-            <label for="mail">e-mail:</label>
+            <div class="row">
             
-            <hr>
-            <br>
-        </div>
+            
+            <div class="col-sm-12 col-md-8 col-md-6 border p-3 mx-auto ">
+                <label for="nyp">Nombre y Apellido: </label>
+                <input type="text" name="nombre y apellido" id="nyp" class="form-control mt-2" >
+            
+    
+            
+    
+                <label for="fdn">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha de nacimiento" id="fdn" class="form-control mt-2">
+            
+            
+            
+            
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="Teléfono" id="tel" class="form-control mt-2" >
+
+    
+            
+    
+            <label for="mail">E-mail:</label>
+            <input type="email" name="mail" id="mail" class="form-control mt-2">
+
+            
+            
+            
+            </div>    
         
-    <h2>Actividades de interes</h2>   
+        
     
-        <div>
+    
+        <div class="col-sm-12 col-md-8 col-md-6 border p-3 mx-auto">
+            <h2>Actividades de interes :</h2>   
             <input type="checkbox" name="gimnasio" id="gimnasio">
             <label for="gimnasio">Gimnasio</label>
-            <br>  
+            
             <input type="checkbox" name="Fútbol" id="Fútbol">
             <label for="Fútbol">Fútbol</label>
-            <br> 
+            
             <input type="checkbox" name="Fútbol Femenino" id="Fútbol Femenino">
             <label for="Fútbol Femenino">Fútbol Femenino</label>
-            <br>
+            
             <input type="checkbox" name="Funcional" id="Funcional">
             <label for="Funcional">Funcional</label>
-            <hr>
+            
         </div>
     
-    <h2>Asociar a :</h2>    
+
+            <div class="col-sm-12 col-md-8 col-md-6 border p-3 mx-auto">  
+            <h2>Asociar a :</h2>          
+            
             <p>¿ Deseas asociar a su cónyuge?</p>
             <input type="radio" name="conyuge" id="si">
             <label for="si">Si</label>
@@ -82,26 +105,41 @@
             <input type="radio" name="hijos" id="no">
             <label for="no">No</label>
 
-    <h3>Te contactamos por :</h3>       
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-6 border p-3 mx-auto">
+                
+            <h3>Te contactamos por :</h3> 
             <input type="checkbox" name="llamada Teléfonica" id="llamada">
             <label for="llamada">Llamada Teléfonica</label>
-
+                
+            
+            
             <input type="checkbox" name="whatsapp" id="whatsapp">
             <label for="whatsapp">Whatsapp</label>
 
             <input type="checkbox" name="email" id="email">
             <label for="email">E-mail</label>
+            </div>
 
+            <div class="p-4 text-center d-grid d-md-inline" > 
+                <button type="submit" class="btn btn-success">ENVIAR</button> 
+                <button type="reset" class="btn btn-success">BORRAR</button>
+            </div>    
         
-        <button type="submit">ENVIAR</button> 
-        <button type="reset">BORRAR</button>
+        
+        
+        </div>
 
-            
+
+
+    </div>   
 
     </form>
+    
+    </section>  
     </main>
 
-    <footer>
+    <footer class="mt-5">
         <p>escudo del cub     Direccion:         Telefono:               iconos de rede sociales         </p>
     </footer>    
 </body>
